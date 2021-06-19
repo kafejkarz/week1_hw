@@ -10,8 +10,15 @@ def get_total_cash(cash):
     
 
 
-def add_or_remove_cash(given_dict, cash):
-    given_dict["admin"]["total_cash"] += cash  
+def add_or_remove_cash(admin_cash, add_cash):
+     admin_cash["admin"]["total_cash"] += add_cash
+       
+def remove_cash(admin_cash, remove_cash):
+     admin_cash["admin"]["total_cash"] += remove_cash
+     
+def get_pets_sold(less_pets):
+    return less_pets["admin"]["pets_sold"]
+
 
 
 
