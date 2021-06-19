@@ -20,6 +20,8 @@ def get_pets_sold(less_pets):
     return less_pets["admin"]["pets_sold"]
 
 
+def increase_pets_sold(more_pets, add_pets):
+    more_pets["admin"]["pets_sold"] += add_pets
 
 
 
