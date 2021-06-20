@@ -53,3 +53,12 @@ def find_pet_by_name(find_name, pet_name):
             return None
         elif name["name"] == pet_name:
             return name
+
+def remove_pet_by_name(remove_name, pet_name):
+    removed_pet_name = []
+    for name in remove_name["pets"]:
+        if name["name"] == "Arthur":
+            removed_pet_name = remove_name["pets"].index(name)
+            return remove_name["pets"].pop(removed_pet_name)
+
+    
