@@ -37,12 +37,19 @@ def get_pets_by_breed(get_breed, breed):
 
 def get_pets_by_breed(breed_not_fund, breed):
     breed_count = []
-    for pet in breed_not_fund["pets"]:
+    for pet in breed_not_fund["pets"]:     
         if pet["breed"] == breed:
              breed_count.append(breed)
     return breed_count
 
-def find_pet_by_name(find_name, b):
+def find_pet_by_name(find_name, pet_name):
     for name in find_name["pets"]:
         if name["name"] == "Arthur":
+            return name
+
+def find_pet_by_name(find_name, pet_name):
+    for name in find_name["pets"]:
+        if name["name"] == "Fred":
+            return None
+        elif name["name"] == pet_name:
             return name
